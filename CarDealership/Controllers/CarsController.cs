@@ -10,8 +10,8 @@ namespace Cars.Controllers
     [HttpGet("/DisplayIndex")]
     public ActionResult DisplayIndex()
     {
-      List<Car> newList = Car.CarItems;
-      return View(newList);
+      List<Car> newItem = Car.CarItems;
+      return View(newItem);
     }
 
     [HttpGet("/CreateCarForm/new")]
@@ -24,7 +24,7 @@ namespace Cars.Controllers
     public ActionResult Create(string makeModel, string color, int price, int miles)
     {
       Car newCar = new Car(makeModel, color, price, miles);
-      return RedirectToAction("DisplayCars");
+      return RedirectToAction("DisplayIndex");
     }
 
 

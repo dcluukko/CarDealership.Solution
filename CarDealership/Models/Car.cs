@@ -4,10 +4,10 @@ namespace Cars.Models
 {
   public class Car
   {
-    public string MakeModel;
-    public string Color;
-    public int Price;
-    public int Miles;
+    public string MakeModel {get; set;}
+    public string Color {get; set;}
+    public int Price {get; set;}
+    public int Miles {get; set;}
     public static List<Car> CarItems = new List<Car>() {};
 
    public Car(string makeModel, string color, int price, int miles)
