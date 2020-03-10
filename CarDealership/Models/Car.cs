@@ -4,15 +4,15 @@ namespace CarDealership.Models
 {
   public class Car
   {
-    private string _makeModel;
-    private int _price;
-    private int _miles;
+    public string MakeModel;
+    public int Price;
+    public int Miles;
    
    public Car(string makeModel, int price, int miles)
     {
-      _makeModel = makeModel;
-      _price = price;
-      _miles = miles;
+      MakeModel = makeModel;
+      Price = price;
+      Miles = miles;
     }
   }
 }
