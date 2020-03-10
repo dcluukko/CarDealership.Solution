@@ -1,4 +1,9 @@
-<h1>Car Dealership<h1>
-<ul>
-  <li>@Model.MakeModel</li>
-</ul>
+@using CarDealership.Models;
+
+<h1>Our Cars:</h1>
+@foreach (Car Cars in Model)
+{
+  <li>Cars.MakeModel</li>
+}
+
+
