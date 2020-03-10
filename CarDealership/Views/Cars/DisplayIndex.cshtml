@@ -1,0 +1,25 @@
+@using Cars.Models;
+@{
+  Layout = "_Layout";
+}
+
+<h1>Cars List</h1>
+
+<div class="card-group">
+  @foreach (Car car in Model)
+  {
+    <div class="card">
+      <div class="card-img-top">
+
+      </div>
+      <div class="card-body">
+
+        <h3 class="card-title">@car.MakeModel</h3>
+        <p class="card-text">@car.Color</p>
+        <p class="card-text">@car.Price</p>
+        <p class="card-text">@car.Miles</p>
+      </div>
+    </div>
+    
+  }
+</div>

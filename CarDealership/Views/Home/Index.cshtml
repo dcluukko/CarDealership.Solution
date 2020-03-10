@@ -1,9 +1,8 @@
-@using CarDealership.Models;
-
-<h1>Our Cars:</h1>
-@foreach (Car Cars in Model)
-{
-  <li>Cars.MakeModel</li>
+@using Cars.Models;
+@{
+  Layout = "_Layout";
 }
+<h1>Cars Home</h1>
 
-
+<a href="/CreateCarForm/new">add a new car</a>
+<a href="/DisplayIndex">look at current cars</a>
