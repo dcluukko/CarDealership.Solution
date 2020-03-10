@@ -7,8 +7,8 @@ namespace Cars.Controllers
   public class CarsController : Controller
   {
 
-    [HttpGet("/DisplayIndex")]
-    public ActionResult DisplayIndex()
+    [HttpGet("/DisplayCars")]
+    public ActionResult DisplayCars()
     {
       List<Car> newItem = Car.CarItems;
       return View(newItem);
@@ -24,7 +24,7 @@ namespace Cars.Controllers
     public ActionResult Create(string makeModel, string color, int price, int miles)
     {
       Car newCar = new Car(makeModel, color, price, miles);
-      return RedirectToAction("DisplayIndex");
+      return RedirectToAction("DisplayCars");
     }
 
 
